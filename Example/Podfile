@@ -1,11 +1,13 @@
-use_frameworks!
+platform :ios, '10.0'
 
 target 'RxUnfurl_Example' do
-  pod 'RxUnfurl', :path => '../'
+	use_frameworks!
 
-  target 'RxUnfurl_Tests' do
-    inherit! :search_paths
+  	pod 'RxUnfurl', :path => '../'
+  	pod 'RxSwift'
+  	pod 'Alamofire'
 
-    
-  end
+  	target 'RxUnfurl_Tests' do
+    	inherit! :search_paths
+  	end
 end

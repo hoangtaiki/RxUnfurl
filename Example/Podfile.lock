@@ -1,0 +1,27 @@
+PODS:
+  - Alamofire (4.8.2)
+  - RxSwift (5.0.0)
+  - RxUnfurl (0.1.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - RxSwift
+  - RxUnfurl (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - RxSwift
+
+EXTERNAL SOURCES:
+  RxUnfurl:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  RxUnfurl: c63f5a19e42ef5e9cdde4f5972e6de97f788c985
+
+PODFILE CHECKSUM: 2f22b93325317ecc50e3509f4e2de8ac27888a25
+
+COCOAPODS: 1.7.1
