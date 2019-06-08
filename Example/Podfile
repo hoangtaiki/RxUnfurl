@@ -5,7 +5,6 @@ target 'RxUnfurl_Example' do
 
   	pod 'RxUnfurl', :path => '../'
   	pod 'RxSwift'
-  	pod 'Alamofire'
 
   	target 'RxUnfurl_Tests' do
     	inherit! :search_paths

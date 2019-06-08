@@ -9,20 +9,20 @@ import UIKit
 
 public struct PreviewData {
     
-    public var url: URL?
+    public var url: URL
     public var title: String = ""
     public var description: String = ""
-    public var images: [ImageInfo] = []
+    public var image: ImageInfo?
     
     public var debugDescription: String {
-        return "PreviewData{url='\(url?.absoluteString ?? "")', title=\(title), description=\(description), images=\(images)"
+        return "PreviewData{url='\(url.absoluteString)', title=\(title), description=\(description), images=\(String(describing: image))"
     }
     
-    public init(url: URL? = nil, title: String = "", description: String = "", images: [ImageInfo] = []) {
+    public init(url: URL, title: String = "", description: String = "", image: ImageInfo? = nil) {
         self.url = url
         self.title = title
         self.description = description
-        self.images = images
+        self.image = image
     }
 }
 
